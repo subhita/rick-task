@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+import {Router, Link} from '@reach/router';
+import Search from './Search';
+import Details from './Details';
 import './App.css';
+import './fonts.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="app">
+            <header>
+                <Link to="/">
+                    <h1>Rick and Morty Show</h1>
+                </Link>
+            </header>
+            <Router>
+                <Search path="/" />
+                <Details path="/details/:id" />
+            </Router>
+        </div>
+    );
 }
 
 export default App;
