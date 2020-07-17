@@ -1,5 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-Screenshots
+
+# Screenshots link for desktop, tablet and mobile view 
 https://github.com/subhita/rick-task/issues/1#issue-658898102
 
 ## Available Scripts
